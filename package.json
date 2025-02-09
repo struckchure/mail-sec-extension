@@ -2,7 +2,18 @@
   "name": "mail-sec-extension",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
   "repository": "git@github.com:struckchure/mail-sec-extension.git",
   "author": "Mohammed Al Ameen <ameenmohammed2311@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@tensorflow-models/toxicity": "^1.2.2",
+    "@tensorflow/tfjs": "^4.22.0"
+  }
 }
