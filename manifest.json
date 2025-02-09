@@ -9,12 +9,8 @@
     "48": "icons/extension_48.png",
     "128": "icons/extension_128.png"
   },
-  "permissions": [
-    "activeTab",
-    "*://mail.google.com/*",
-    "storage"
-  ],
-  "browser_action": {
+  "permissions": ["activeTab", "*://mail.google.com/*", "storage"],
+  "action": {
     "default_icon": {
       "16": "icons/extension_16.png",
       "32": "icons/extension_32.png",
