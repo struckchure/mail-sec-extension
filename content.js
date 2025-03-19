@@ -135,17 +135,17 @@ function observeEmailChanges() {
 }
 
 // Initial scan and setup observers
-document.addEventListener("DOMContentLoaded", () => {
-  scanOpenEmail();
+document.addEventListener("DOMContentLoaded", async () => {
+  await scanOpenEmail();
   observeEmailChanges();
 });
 
 // Also scan when URL changes (Gmail is a SPA)
 let lastUrl = location.href;
-new MutationObserver(() => {
+new MutationObserver(async () => {
   const url = location.href;
   if (url !== lastUrl) {
     lastUrl = url;
-    scanOpenEmail();
+    await scanOpenEmail();
   }
 }).observe(document, { subtree: true, childList: true });
