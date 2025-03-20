@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Mail Security Extension",
   "version": "1.0",
   "description": "A browser extension for mail security",
@@ -9,7 +9,7 @@
     "48": "icons/extension_48.png",
     "128": "icons/extension_128.png"
   },
-  "permissions": ["activeTab", "*://mail.google.com/*", "storage"],
+  "permissions": ["activeTab", "storage"],
   "action": {
     "default_icon": {
       "16": "icons/extension_16.png",
