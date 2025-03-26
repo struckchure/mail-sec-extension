@@ -29362,7 +29362,7 @@ class E4 {
   // Attach event listeners for manual scanning
   attachEventListeners() {
     document.addEventListener("keydown", async (n) => {
-      n.ctrlKey && n.shiftKey && n.key === "S" && await this.scanOpenEmail();
+      n.ctrlKey && n.shiftKey && n.key === "Q" && await this.scanOpenEmail();
     });
   }
   // Enhanced model loading with multiple threat detection models
