@@ -22,7 +22,7 @@
   "content_scripts": [
     {
       "matches": ["*://mail.google.com/*"],
-      "js": ["dist/bundle.js"],
+      "js": ["dist/bundle.es.js"],
       "run_at": "document_idle"
     }
   ]
