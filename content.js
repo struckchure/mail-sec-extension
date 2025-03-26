@@ -72,8 +72,8 @@ class GmailSecurityExtension {
   attachEventListeners() {
     // Optional: Add a manual scan button or keyboard shortcut
     document.addEventListener("keydown", async (event) => {
-      // Example: Ctrl+Shift+I for manual scan
-      if (event.ctrlKey && event.shiftKey && event.key === "I") {
+      // Example: Ctrl+Shift+Y for manual scan
+      if (event.ctrlKey && event.shiftKey && event.key === "Y") {
         await this.scanOpenEmail();
       }
     });
